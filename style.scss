@@ -679,13 +679,18 @@ body::-webkit-scrollbar {
 			}
 			&--list {
 				display: flex;
+				flex-wrap: wrap;
 				list-style: none;
 				padding: 0;
 				margin: 5px 0;
 				&--item {
+					margin-top: 3px;
 					padding-right: 10px;
 					font-size: var(--font-sssl);
 					color: var(--color-text-sub);
+					@include mq(xl) {
+						margin-top: 3px;
+					}
 				}
 			}
 		}

@@ -936,15 +936,24 @@ body::-webkit-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 5px 0;
 }
 
 .workitem__right .workitem__member--list--item {
+  margin-top: 3px;
   padding-right: 10px;
   font-size: var(--font-sssl);
   color: var(--color-text-sub);
+}
+
+@media screen and (max-width: 1200px) {
+  .workitem__right .workitem__member--list--item {
+    margin-top: 3px;
+  }
 }
 
 .about {

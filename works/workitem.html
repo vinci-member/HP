@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>vincihomepage</title>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+		/>
+		<link rel="stylesheet" href="../../style.css" />
+		<script>
+			(function (d) {
+				var config = {
+						kitId: 'kvx3aip',
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, '') +
+							' wf-inactive';
+					}, config.scriptTimeout),
+					tk = d.createElement('script'),
+					f = false,
+					s = d.getElementsByTagName('script')[0],
+					a;
+				h.className += ' wf-loading';
+				tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != 'complete' && a != 'loaded')) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
+			})(document);
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="header__logo">
+					<a href="/HP/index.html">
+						<img src="../../images/vinci.png" alt="" />
+					</a>
+				</div>
+
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+				</div>
+
+				<nav class="globalMenuSp">
+					<ul class="globalMenuSp__list">
+						<li class="globalMenuSp__list--item">
+							<a href="/HP/index.html">home</a>
+						</li>
+						<li class="globalMenuSp__list--item">
+							<a href="../../work.html">work</a>
+						</li>
+						<li class="globalMenuSp__list--item">
+							<a href="../../about.html">about</a>
+						</li>
+						<div class="globalMenuSp__list--sns">
+							<div class="globalMenuSp__list--sns--item">
+								<a
+									href="https://www.instagram.com/ksumedia__vinci/"
+								>
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+							<div class="globalMenuSp__list--sns--item">
+								<a href="https://twitter.com/vinci_ksu">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
+						</div>
+					</ul>
+				</nav>
+
+				<div class="header__gnav">
+					<ul class="header__nav">
+						<li class="header__nav--item">
+							<a href="../../work.html">work</a>
+						</li>
+						<li class="header__nav--item">
+							<a href="../../about.html">about</a>
+						</li>
+						<!-- <li class="header__nav--item"><a href="">contact</a></li> -->
+					</ul>
+					<div class="header__sns">
+						<a href="https://www.instagram.com/ksumedia__vinci/">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+					<div class="header__sns">
+						<a href="https://twitter.com/vinci_ksu">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<div class="workitem">
+				<div class="workitem__left">
+					<ul class="workitems__list">
+						<!-- ------------------------------------------------------------------------------------------------プロジェクト画像 -->
+						<!--
+							--記述方法--
+							src="./〇〇.jpg" 
+							
+							--①この下をコピーしてください--
+
+							<li class="workitems__img">
+								<img id="slide" src="./〇〇.jpg"  alt="" />
+							</li>
+						-->
+
+						<!-- ①この下にペーストしてください -->
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+						<li class="workitems__img">
+							<img id="slide" src="images/tori.png" alt="" />
+						</li>
+					</ul>
+					<!-- ------------------------------------------------------------------------------------------------プロジェクト画像 -->
+				</div>
+
+				<div class="workitem__right">
+					<div class="up_btn"><i class="fas fa-angle-up"></i></div>
+					<!-- ----------------------------------------------------------------------------------------------------- プロジェクト内容　-->
+					<!--ここ記述されている内容に沿って記述してください -->
+					<!-- タイトル -->
+					<div class="workitem__title">九州産業高校</div>
+
+					<!-- プロジェクトを受けた企業/学生課-->
+					<div class="workitem__sub">九州産業大学　学生課</div>
+
+					<!-- プロジェクト形式 -->
+					<!-- 
+						複製したい時にコピーしてください
+						<div class="workitem__tab--item">Movie</div>
+					-->
+					<div class="workitem__tab">
+						<!-- この下にペーストしてください -->
+						<div class="workitem__tab--item">Movie</div>
+						<div class="workitem__tab--item">Photo</div>
+					</div>
+
+					<!-- プロジェクト内容 -->
+					<p class="workitem__text">
+						背景：なぜそれを制作することになったのか。課題と必要と思った理由を記載
+						新型コロナウイルスが猛威をふるった2020年4月、外出自粛と求められていた中
+						それでも街に出て遊んでる同世代の若者に向けて何か注意換気はできないかと思い
+						今回の「取り戻せなくなる前に」を制作しました。
+						メンバーも１０人ほどで脚本・撮影・編集の時間も仕事を依頼されてから約半年ほど
+						で行いかなり時間的にも余裕のない状態で制作となりましたが、Youtubeで動画再生
+						回数は2000回を超え、Twitterでは100ほどリツイートを記録しました。
+					</p>
+
+					<!-- プロジェクトメンバー -->
+					<div class="workitem__member">
+						<div class="workitem__member--title">
+							Project member
+						</div>
+						<ul class="workitem__member--list">
+							<!-- 
+								複製したい時にコピーしてください
+								<li class="workitem__member--list--item">
+									山田太郎--名前
+								</li>
+							-->
+							<!-- この下にペーストしてください -->
+							<li class="workitem__member--list--item">
+								山田太郎
+							</li>
+							<li class="workitem__member--list--item">
+								山田太郎
+							</li>
+							<li class="workitem__member--list--item">
+								山田太郎
+							</li>
+							<li class="workitem__member--list--item">
+								山田太郎
+							</li>
+						</ul>
+					</div>
+					<!-- ----------------------------------------------------------------------------------------------------- プロジェクト内容　-->
+				</div>
+			</div>
+
+			<footer class="footer">
+				<div class="footer__text">
+					&copy; 2021 vinci.All rights reserved
+				</div>
+			</footer>
+		</div>
+
+		<!-- ローディング画面 -->
+		<div id="loading">
+			<svg id="svgstroke" viewBox="0 0 82.14 124.02">
+				<path
+					class="cls-1"
+					d="M151.68,84.81s4.19,46.12,0,49.71c-4.4,3.76-14,.86-24.29-4.56"
+					transform="translate(-95.66 -82.72)"
+				/>
+				<path
+					class="cls-2"
+					d="M172.7,152.15c5.47,32.38,3.47,50.08-5.77,52.15s-13.72-4.85-16.18-14.13a1.85,1.85,0,0,0-.56-.95c-2.34-1.93-3.52,5.58-12.6,4.05-6.18-1-7.52-5-9.47-16.55a2.31,2.31,0,0,0-.34-.83c-2.37-3.78-7.2,2.37-11.22.4-3.17-1.55-4.11-4.62-4.35-8.32a4.31,4.31,0,0,0-3.56-4c-2.52-.44-5.71-.37-8.5-4.2-4-5.51-2.65-11,1.5-18.45"
+					transform="translate(-95.66 -82.72)"
+				/>
+				<path
+					class="cls-2"
+					d="M105,137.07c15,19.33,44.83,19,66.9,16.17"
+					transform="translate(-95.66 -82.72)"
+				/>
+				<circle
+					class="cls-3"
+					cx="113.73"
+					cy="96.7"
+					r="2.52"
+					transform="translate(-102.17 102.45) rotate(-76.72)"
+				/>
+				<path
+					class="cls-4"
+					d="M170.88,95.36a2.25,2.25,0,1,1,2.25,2.26A2.25,2.25,0,0,1,170.88,95.36Z"
+					transform="translate(-95.66 -82.72)"
+				/>
+				<path
+					class="cls-1"
+					d="M165.41,204.56"
+					transform="translate(-95.66 -82.72)"
+				/>
+			</svg>
+			<div class="loader">Loading...</div>
+		</div>
+
+		<!-- mouse stoker -->
+		<div id="stalker">
+			<div class="stalker__pointer"></div>
+		</div>
+
+		<!-- slideshow -->
+		<div class="slidewindow">
+			<img id="" class="slideshow" src="" alt="" />
+		</div>
+
+		<script src="../../js/main.js"></script>
+		<script src="../../js/workitem.js"></script>
+	</body>
+</html>
+
+
+
+
