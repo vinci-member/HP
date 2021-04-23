@@ -48,6 +48,9 @@ body {
 	margin: 0;
 	scrollbar-width: none; /* Firefox 対応 */
 }
+.yugothic{
+	font-family: '游ゴシック体', 'Yu Gothic';
+}
 // デフォルト
 body::-webkit-scrollbar {
 	display: none;
@@ -676,6 +679,7 @@ body::-webkit-scrollbar {
 			&--title {
 				font-size: var(--font-ssm);
 				color: var(--color-text-sub);
+
 			}
 			&--list {
 				display: flex;
@@ -685,6 +689,11 @@ body::-webkit-scrollbar {
 				margin: 5px 0;
 				.leader{
 					width: 100%;
+					span{
+						color: red;
+						font-size: 1px;
+						background: rgba(255,255,255,0);
+					}
 				}
 				&--item {
 					margin-top: 5px;

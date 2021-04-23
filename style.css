@@ -34,6 +34,10 @@ body {
   /* Firefox 対応 */
 }
 
+.yugothic {
+  font-family: '游ゴシック体', 'Yu Gothic';
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -945,6 +949,12 @@ body::-webkit-scrollbar {
 
 .workitem__right .workitem__member--list .leader {
   width: 100%;
+}
+
+.workitem__right .workitem__member--list .leader span {
+  color: red;
+  font-size: 1px;
+  background: rgba(255, 255, 255, 0);
 }
 
 .workitem__right .workitem__member--list--item {
