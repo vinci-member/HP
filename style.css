@@ -943,8 +943,12 @@ body::-webkit-scrollbar {
   margin: 5px 0;
 }
 
+.workitem__right .workitem__member--list .leader {
+  width: 100%;
+}
+
 .workitem__right .workitem__member--list--item {
-  margin-top: 3px;
+  margin-top: 5px;
   padding-right: 10px;
   font-size: var(--font-sssl);
   color: var(--color-text-sub);
@@ -1001,7 +1005,7 @@ body::-webkit-scrollbar {
 }
 
 .about__main {
-  width: 80%;
+  width: 100%;
   margin: 8% 0;
 }
 
@@ -1058,11 +1062,11 @@ body::-webkit-scrollbar {
 }
 
 .about__join--text {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   font-size: var(--font-ss);
-  line-height: 2.5rem;
+  line-height: 2rem;
   letter-spacing: 0.1rem;
 }
 
