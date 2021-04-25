@@ -580,8 +580,6 @@ body::-webkit-scrollbar {
 	}
 }
 
-sss
-
 ///// workitem //////
 .workitem {
 	display: flex;
@@ -849,7 +847,7 @@ sss
 		margin: 0 auto;
 		background: var(--color-main);
 		border-radius: 30px;
-		-webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+		box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 		&__lists {
 			width: 100%;
 			list-style: none;
@@ -881,16 +879,16 @@ sss
 						background: #eaedf2;
 						font-size: 18px;
 					}
-					.conatct--furname {
-					}
-					.contact--mail {
-					}
-					.conatct--tel {
-					}
-					.contact--radio {
-					}
-					.contact--text {
-					}
+					// .conatct--furname {
+					// }
+					// .contact--mail {
+					// }
+					// .conatct--tel {
+					// }
+					// .contact--radio {
+					// }
+					// .contact--text {
+					// }
 				}
 			}
 		}
