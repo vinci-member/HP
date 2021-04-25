@@ -1,8 +1,8 @@
 $breakpoints: (
-	'sm': 'screen and (max-width: 500px)',
-	'md': 'screen and (max-width: 768px)',
-	'lg': 'screen and (max-width: 1000px)',
-	'xl': 'screen and (max-width: 1200px)',
+	"sm": "screen and (max-width: 500px)",
+	"md": "screen and (max-width: 768px)",
+	"lg": "screen and (max-width: 1000px)",
+	"xl": "screen and (max-width: 1200px)",
 ) !default;
 
 @mixin mq($breakpoint: md) {
@@ -15,16 +15,7 @@ body {
 	--color-main: #fff;
 	--color-text: #000;
 	--color-text-sub: #dadada;
-	--color-sub: linear-gradient(
-		to right,
-		red,
-		orange,
-		yellow,
-		green,
-		aqua,
-		blue,
-		purple
-	);
+	--color-sub: linear-gradient(to right, red, orange, yellow, green, aqua, blue, purple);
 
 	--font-sl: 3rem;
 	--font-sm: 2rem;
@@ -41,15 +32,15 @@ body {
 	--font-wnl: 300;
 	--font-wl: 200;
 
-	font-family: futura-pt, '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+	font-family: futura-pt, "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
 	font-style: normal;
 	font-weight: var(--font-wn);
 
 	margin: 0;
 	scrollbar-width: none; /* Firefox 対応 */
 }
-.yugothic{
-	font-family: '游ゴシック体', 'Yu Gothic';
+.yugothic {
+	font-family: "游ゴシック体", "Yu Gothic";
 }
 // デフォルト
 body::-webkit-scrollbar {
@@ -114,7 +105,7 @@ body::-webkit-scrollbar {
 				margin: 0 20px;
 				position: relative;
 				&::after {
-					content: '';
+					content: "";
 					width: 0px;
 					height: 2px;
 					background: var(--color-sub);
@@ -131,7 +122,7 @@ body::-webkit-scrollbar {
 					}
 				}
 				a {
-					font-size: --font-xl;
+					font-size: var(--font-xl);
 					text-decoration: none;
 					color: var(--color-text);
 				}
@@ -357,7 +348,7 @@ body::-webkit-scrollbar {
 			color: var(--color-main);
 			&:hover {
 				&::after {
-					content: '';
+					content: "";
 					width: 100%;
 					height: 100%;
 					background: rgba(0, 0, 0, 0.4);
@@ -589,6 +580,8 @@ body::-webkit-scrollbar {
 	}
 }
 
+sss
+
 ///// workitem //////
 .workitem {
 	display: flex;
@@ -679,7 +672,6 @@ body::-webkit-scrollbar {
 			&--title {
 				font-size: var(--font-ssm);
 				color: var(--color-text-sub);
-
 			}
 			&--list {
 				display: flex;
@@ -687,12 +679,12 @@ body::-webkit-scrollbar {
 				list-style: none;
 				padding: 0;
 				margin: 5px 0;
-				.leader{
+				.leader {
 					width: 100%;
-					span{
+					span {
 						color: red;
 						font-size: 1px;
-						background: rgba(255,255,255,0);
+						background: rgba(255, 255, 255, 0);
 					}
 				}
 				&--item {
@@ -821,6 +813,90 @@ body::-webkit-scrollbar {
 	}
 }
 
+////contact/////
+.contact {
+	width: 80%;
+	margin: 0 auto;
+	&__text {
+		width: 80%;
+		margin: 20px auto;
+		text-align: center;
+		&--title {
+			font-size: 4rem;
+			font-weight: var(--font-wl);
+			margin: 30px 0;
+		}
+		&--text {
+			font-size: var(--font-sm);
+			margin: 20px 0;
+		}
+		&--subtext {
+			font-size: var(--font-ssm);
+			font-weight: var(--font-wl);
+			letter-spacing: 1px;
+			line-height: 3rem;
+		}
+		&--item {
+			margin-top: 15%;
+			span {
+				color: #e68cb6;
+			}
+		}
+	}
+	&__form {
+		width: 95%;
+		padding: 50px;
+		margin: 0 auto;
+		background: var(--color-main);
+		border-radius: 30px;
+		-webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+		&__lists {
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			&--list {
+				display: flex;
+				align-items: center;
+				margin: 3rem 0;
+				&--name {
+					width: 30%;
+					span {
+						color: #e68cb6;
+						font-size: 0.8rem;
+					}
+				}
+				&--item {
+					width: 100%;
+					border: 1px solid #ddd;
+					&:focus-visible {
+						outline: none;
+					}
+					.contact--home {
+						border: 1px solid #ddd;
+						border-radius: 6px;
+						padding-left: 1em;
+						padding-right: 1em;
+						height: 48px;
+						width: 90%;
+						background: #eaedf2;
+						font-size: 18px;
+					}
+					.conatct--furname {
+					}
+					.contact--mail {
+					}
+					.conatct--tel {
+					}
+					.contact--radio {
+					}
+					.contact--text {
+					}
+				}
+			}
+		}
+	}
+}
+
 // animaiton---------------js 扱う
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////// mouse
@@ -906,7 +982,7 @@ img {
 
 .main__image {
 	&:after {
-		content: '';
+		content: "";
 		top: 0;
 		left: 0;
 		width: 0%;
@@ -1034,7 +1110,7 @@ img {
 			a {
 				display: block;
 				color: var(--color-text);
-				padding: 1em 0;
+				padding: 0.3em 0;
 				text-decoration: none;
 				font-size: var(--font-sm);
 			}
