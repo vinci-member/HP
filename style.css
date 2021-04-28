@@ -1171,13 +1171,18 @@ img {
           transform: rotateY(180deg);
 }
 
-.member__members .member__lists--item .cardBox {
+.member__members .member__lists--item a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.member__members .member__lists--item a .cardBox {
   -webkit-perspective: 500px;
           perspective: 500px;
   margin: 15px;
 }
 
-.member__members .member__lists--item .cardBox .card {
+.member__members .member__lists--item a .cardBox .card {
   position: relative;
   width: 150px;
   height: 150px;
@@ -1191,14 +1196,14 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .member__members .member__lists--item .cardBox .card {
+  .member__members .member__lists--item a .cardBox .card {
     width: 100px;
     height: 100px;
   }
 }
 
-.member__members .member__lists--item .cardBox .card .card-front,
-.member__members .member__lists--item .cardBox .card .card-back {
+.member__members .member__lists--item a .cardBox .card .card-front,
+.member__members .member__lists--item a .cardBox .card .card-back {
   position: absolute;
   top: 0;
   left: 0;
@@ -1209,14 +1214,14 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .member__members .member__lists--item .cardBox .card .card-front,
-  .member__members .member__lists--item .cardBox .card .card-back {
+  .member__members .member__lists--item a .cardBox .card .card-front,
+  .member__members .member__lists--item a .cardBox .card .card-back {
     width: 100px;
     height: 100px;
   }
 }
 
-.member__members .member__lists--item .cardBox .card .card-front {
+.member__members .member__lists--item a .cardBox .card .card-front {
   font-size: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1234,7 +1239,7 @@ img {
   border-radius: 50%;
 }
 
-.member__members .member__lists--item .cardBox .card .card-back {
+.member__members .member__lists--item a .cardBox .card .card-back {
   font-size: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1252,7 +1257,7 @@ img {
   border-radius: 50%;
 }
 
-.member__members .member__lists--item .cardBox .card .card-back {
+.member__members .member__lists--item a .cardBox .card .card-back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
