@@ -942,7 +942,10 @@ img {
 								margin-bottom: 5%;
 								text-align: center;
 								font-size: var(--font-ss);
-								font-weight: var(--font-wb);
+								font-weight: var(--font-wnb);
+								@include mq(xl) {
+									font-size: var(--font-sssm);
+								}
 							}
 							.nameCard--name {
 								width: 80%;

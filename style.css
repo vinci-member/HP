@@ -1312,7 +1312,13 @@ img {
   margin-bottom: 5%;
   text-align: center;
   font-size: var(--font-ss);
-  font-weight: var(--font-wb);
+  font-weight: var(--font-wnb);
+}
+
+@media screen and (max-width: 1200px) {
+  .member__members .member__lists--item .nameCard .card .card-front .nameCard--position {
+    font-size: var(--font-sssm);
+  }
 }
 
 .member__members .member__lists--item .nameCard .card .card-front .nameCard--name {
