@@ -70,3 +70,11 @@ window.onload = function () {
 	// Add .loaded to .loading
 	spinner.classList.add('loaded');
 };
+
+
+
+
+
+//////////////////
+// const a = document.getElementById('target');
+// console.log(a.href);
