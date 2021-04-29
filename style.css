@@ -23,6 +23,7 @@ body {
   margin: 0;
   scrollbar-width: none;
   /* Firefox 対応 */
+  -webkit-appearance: none;
 }
 
 *::-moz-selection {
@@ -153,7 +154,6 @@ img {
   content: "";
   width: 0px;
   height: 2px;
-  background: var(--color-sub);
   position: absolute;
   bottom: 0;
   left: 0;

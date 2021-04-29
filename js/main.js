@@ -75,6 +75,25 @@ window.onload = function () {
 
 
 
-//////////////////
-// const a = document.getElementById('target');
-// console.log(a.href);
+////////////////////////.stalker__pointer 背景の色変更
+const point = document.querySelector('.stalker__pointer')
+
+let url = location.href ;
+let index_url = url.match('index')
+let work_url = url.match('work')
+let about_url = url.match('about')
+let member_url = url.match('member')
+
+
+if(index_url){
+	point.style.background = '#845ec2'
+}else if(work_url){
+	point.style.background = '#ffc75f'
+}else if(about_url){
+	point.style.background = '#f9f871'
+}else if(member_url){
+	point.style.background = '#ff5e78'
+}else{
+	point.style.background = '#314e52'
+}
+
