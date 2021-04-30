@@ -30,3 +30,12 @@ for (let i = 0; i < img.length; i++) {
 		ClassSlideshow.removeAttribute('src', src);
 	});
 }
+
+//////////////////////////////iframe
+const iframe = document.querySelector('iframe')
+iframe.addEventListener('mouseenter',(e)=>{
+	point.style.opacity = 0
+})
+iframe.addEventListener('mouseleave',(e)=>{
+	point.style.opacity = 1
+})

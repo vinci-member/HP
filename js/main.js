@@ -15,6 +15,7 @@ a.forEach((e) => {
 	});
 });
 
+
 const tl = new TimelineMax();
 
 tl.from('.main__title span', 3.6, {
@@ -86,13 +87,13 @@ let member_url = url.match('member')
 
 
 if(index_url){
-	point.style.background = '#845ec2'
+	point.style.background = '#ffc0cb'
 }else if(work_url){
-	point.style.background = '#ffc75f'
+	point.style.background = '#ff0000'
 }else if(about_url){
-	point.style.background = '#f9f871'
+	point.style.background = '#ffa500'
 }else if(member_url){
-	point.style.background = '#ff5e78'
+	point.style.background = '#845ec2'
 }else{
 	point.style.background = '#314e52'
 }
