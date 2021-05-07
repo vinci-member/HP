@@ -35,6 +35,7 @@ body {
 	font-family: futura-pt, "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
 	font-style: normal;
 	font-weight: var(--font-wn);
+	background-color: var(--color-main);
 
 	margin: 0;
 	scrollbar-width: none; /* Firefox 対応 */
@@ -59,6 +60,10 @@ body {
 body::-webkit-scrollbar {
 	display: none;
 }
+a {
+	color: currentcolor;
+	background-color: transparent;
+}
 img {
 	object-fit: cover;
 }
@@ -82,7 +87,8 @@ img {
 	flex-direction: row;
 	align-items: center;
 	justify-self: space-between;
-	z-index: 99;
+	z-index: 999;
+
 	@include mq(xl) {
 		width: 100%;
 		height: 100px;
@@ -109,6 +115,7 @@ img {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+
 		@include mq(xl) {
 			display: none;
 		}
@@ -116,7 +123,6 @@ img {
 			display: flex;
 			list-style: none;
 			width: 100%;
-
 			&--item {
 				margin: 0 20px;
 				position: relative;
@@ -144,6 +150,11 @@ img {
 				&:nth-child(3) {
 					&::after {
 						background: #845ec2;
+					}
+				}
+				&:nth-child(4) {
+					&::after {
+						background: #025955;
 					}
 				}
 				&:hover {
@@ -1179,6 +1190,127 @@ img {
 					margin-top: 10px;
 					margin-right: 10px;
 					letter-spacing: 0rem;
+				}
+			}
+		}
+	}
+}
+////////////////////////////////////////////////////////news/////
+.news {
+	width: 90%;
+	margin: 0 auto;
+	@include mq(xl) {
+		width: 100%;
+		margin: 10% auto;
+		margin-top: 30%;
+	}
+	.news__title {
+		font-size: var(--font-sm);
+		font-weight: var(--font-wnb);
+		@include mq(xl) {
+			font-size: var(--font-ssl);
+		}
+	}
+	.news__wrapper {
+		width: 90%;
+		margin: 0 auto;
+		@include mq(xl) {
+			width: 100%;
+		}
+		.news__lists {
+			width: 100%;
+			margin: 10% 0;
+			.news__list {
+				margin: 10% 0;
+				border-bottom: 1px solid var(--color-text-sub);
+				&--date {
+					font-size: var(--font-ssm);
+					color: var(--color-text-sub);
+					@include mq(xl) {
+						font-size: var(--font-ss);
+					}
+				}
+				&--title {
+					font-size: var(--font-sm);
+					font-weight: var(--font-wl);
+					@include mq(xl) {
+						font-size: var(--font-ssl);
+					}
+				}
+				&--tag {
+					display: flex;
+					flex-direction: row;
+					margin: 2% 0;
+					&--item {
+						padding: 1px 8px;
+						color: var(--color-text-sub);
+						border: 1px solid var(--color-text-sub);
+						border-radius: 50px;
+					}
+				}
+				&--image {
+					width: 100%;
+					height: 70vh;
+					@include mq(xl) {
+						height: 30vh;
+					}
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				&--text {
+					font-size: var(--font-ss);
+					letter-spacing: 0.1rem;
+					line-height: 2rem;
+					font-family: "游ゴシック体", "Yu Gothic";
+					@include mq(xl) {
+						font-size: var(--font-sssl);
+						line-height: 1.5rem;
+					}
+				}
+				&--pgrapher {
+					display: flex;
+					flex-direction: row;
+					&--title {
+						font-size: var(--font-ss);
+						color: var(--color-text-sub);
+						margin-right: 10px;
+						@include mq(xl) {
+							font-size: var(--font-sssl);
+						}
+					}
+					&--name {
+						font-size: var(--font-ss);
+						@include mq(xl) {
+							font-size: var(--font-sssl);
+						}
+					}
+				}
+				&--member {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					margin: 5% 0;
+					&-icon {
+						width: 50px;
+						height: 50px;
+						margin-right: 20px;
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							border-radius: 50%;
+							box-shadow: 2px 1px 10px 6px var(--color-text-sub);
+						}
+					}
+					&-name {
+						font-size: var(--font-ss);
+						@include mq(xl) {
+							font-size: var(--font-sssl);
+						}
+					}
 				}
 			}
 		}

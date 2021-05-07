@@ -84,6 +84,7 @@ let index_url = url.match('index')
 let work_url = url.match('work')
 let about_url = url.match('about')
 let member_url = url.match('member')
+let news_url = url.match('news')
 
 
 if(index_url){
@@ -94,6 +95,8 @@ if(index_url){
 	point.style.background = '#ffa500'
 }else if(member_url){
 	point.style.background = '#845ec2'
+}else if(news_url){
+	point.style.background = '#025955'
 }else{
 	point.style.background = '#314e52'
 }
