@@ -1006,7 +1006,6 @@ img {
 }
 
 .workitem__right .workitem__member--list .leader span {
-  color: red;
   font-size: 1px;
   background: rgba(255, 255, 255, 0);
 }
