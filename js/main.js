@@ -37,6 +37,8 @@ tl.from('.main__sub span', 1.8, {
 });
 
 const scrollanime = document.querySelectorAll('.scrollanime');
+const scroll_title = document.querySelectorAll('.scroll_title');
+
 window.addEventListener('scroll', () => {
 	scrollanime.forEach((e) => {
 		const rect = e.getBoundingClientRect().top;
@@ -101,3 +103,26 @@ if(index_url){
 	point.style.background = '#314e52'
 }
 
+TweenMax.staggerFrom(
+    ".header__nav > li",
+    1,
+    {
+        y: "10",
+        opacity: 0,
+        ease: Power2.easeOut,
+        delay: 3,
+    },
+    0.3
+);
+
+TweenMax.staggerFrom(
+    ".header__sns",
+    1,
+    {
+        y: "10",
+        opacity: 0,
+        ease: Power2.easeOut,
+        delay: 4.5,
+    },
+    0.3
+);
